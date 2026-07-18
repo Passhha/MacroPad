@@ -1,4 +1,4 @@
-# MacroPad X
+# MacroPad 
 
 Firmware for an Arduino Pro Micro macro pad with a 4x5 key matrix, GC9A01 display,
 encoder, one WS2812 LED and USB HID.
