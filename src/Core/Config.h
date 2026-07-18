@@ -23,6 +23,10 @@ namespace Config
     constexpr uint8_t KeyCount =
         MatrixRows * MatrixColumns;
 
+    constexpr bool KeyboardScanEnabled = true;
+
+    constexpr uint8_t KeyboardDebounceMs = 5;
+
     // ===========================
     // Encoder
     // ===========================
@@ -34,6 +38,8 @@ namespace Config
     // ===========================
 
     constexpr uint8_t MaxBrightness = 255;
+
+    constexpr uint8_t RgbLedCount = 1;
 
     // ===========================
     // Timing

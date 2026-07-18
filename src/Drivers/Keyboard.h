@@ -2,6 +2,9 @@
 
 #include <Arduino.h>
 
+#include "../Core/Config.h"
+#include "../Core/Types.h"
+
 class Keyboard
 {
 public:
@@ -10,9 +13,13 @@ public:
 
     void update();
 
-    bool pressed(uint8_t key);
+    const KeyboardState& state() const;
 
 private:
 
-    bool state[2] = {false, false};
+    bool rawState_[Config::KeyCount] = {};
+
+    uint32_t rawChangedAt_[Config::KeyCount] = {};
+
+    KeyboardState state_;
 };

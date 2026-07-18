@@ -22,10 +22,10 @@ namespace Pins
     constexpr uint8_t Row3 = 8;
 
     constexpr uint8_t Col0 = 9;
-    constexpr uint8_t Col1 = 10;
-    constexpr uint8_t Col2 = 16;
-    constexpr uint8_t Col3 = 14;
-    constexpr uint8_t Col4 = 15;
+    constexpr uint8_t Col1 = 14;
+    constexpr uint8_t Col2 = A0;
+    constexpr uint8_t Col3 = A1;
+    constexpr uint8_t Col4 = 1;
 
     // ===========================
     // TFT Display
@@ -43,5 +43,5 @@ namespace Pins
     // RGB
     // ===========================
 
-    constexpr uint8_t RGB = A1;
+    constexpr uint8_t RGB = 0;
 }
